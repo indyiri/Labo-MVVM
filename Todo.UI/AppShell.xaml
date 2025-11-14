@@ -10,7 +10,9 @@
 
     <ShellContent
         Title="ToDoList"
-        ContentTemplate="{DataTemplate local:ToDoListPage}"
-        Route="ToDoListPage" />
+        ContentTemplate="{DataTemplate pages:ToDoListPage}"
+        Route="ToDoListPage" />  
+    
+    <!--De 'route' is hetgeen dat je vermeld in de async methode, de titke is gewoon wat de gebruiker ziet bij het laden van die pagina-->
 
 </Shell>

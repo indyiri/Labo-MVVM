@@ -1,3 +1,6 @@
+using MauiIcons.Core;
+using Todo.UI.ViewModels;
+
 namespace Todo.UI.Pages;
 
 public partial class ToDoListPage : ContentPage
@@ -5,5 +8,7 @@ public partial class ToDoListPage : ContentPage
 	public ToDoListPage()
 	{
 		InitializeComponent();
+		this.BindingContext = new ToDoListViewModel();
+		_ = new MauiIcon();
 	}
 }
